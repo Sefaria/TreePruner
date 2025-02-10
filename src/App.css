@@ -1,0 +1,74 @@
+.app {
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls button {
+  margin-right: 10px;
+}
+
+.panes {
+  display: flex;
+  gap: 20px;
+}
+
+.pane {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.tree-node {
+  margin: 5px 0;
+}
+
+.node-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.node-children {
+  margin-left: 20px;
+}
+
+.expand-toggle {
+  cursor: pointer;
+  user-select: none;
+  color: #555;
+}
+
+.filtered-node {
+  margin: 5px 0;
+}
+
+.filtered-children {
+  margin-left: 20px;
+}
+
+.deselected-item {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restore-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 5px;
+  font-size: 1.2em;
+  opacity: 0.7;
+}
+
+.restore-button:hover {
+  opacity: 1;
+} 

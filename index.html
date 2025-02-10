@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sefaria Category Tree Explorer</title>
+    
+    <!-- React and ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Load our CSS -->
+    <link rel="stylesheet" href="src/App.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Load our utilities first -->
+    <script type="text/babel" src="src/utils/treeUtils.js"></script>
+    <script type="text/babel" src="src/utils/api.js"></script>
+    <script type="text/babel" src="src/utils/fileIO.js"></script>
+
+    <!-- Then load our components -->
+    <script type="text/babel" src="src/components/TreeView.jsx"></script>
+    <script type="text/babel" src="src/components/FilteredTree.jsx"></script>
+    <script type="text/babel" src="src/components/DeselectedList.jsx"></script>
+    <script type="text/babel" src="src/App.jsx"></script>
+    
+    <!-- Finally load our entry point -->
+    <script type="text/babel" src="src/index.js"></script>
+</body>
+</html> 
